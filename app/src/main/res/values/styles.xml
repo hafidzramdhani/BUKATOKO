@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+	
+	<style name="BottomNavTheme">
+		<item name="android:textSize">11dp</item>
+		<item name="android:state_checked">true</item>
+		<item name="backgroundTint">@null</item>
+		<item name="itemIconTint">@drawable/bottom_selector</item>
+		<item name="itemTextColor">@drawable/bottom_selector</item>
+		<!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:statusBarColor">@color/groundWhite</item>
+		<item name="android:navigationBarColor">@color/groundWhite</item>
+		<item name="android:windowLightNavigationBar">true</item>-->
+	</style>
+
+</resources>
