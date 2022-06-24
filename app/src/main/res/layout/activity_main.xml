@@ -28,6 +28,7 @@
 		android:layout_above="@+id/bottomNav"
 		android:layout_below="@+id/appBar"/>
 	
+	
 	<View
 		android:layout_width="match_parent"
 		android:layout_height="0.9dp"
@@ -44,5 +45,7 @@
 		app:elevation="0dp"
 		app:labelVisibilityMode="labeled"
 		app:menu="@menu/menuNav"/>
+	
+	
 
 </RelativeLayout>

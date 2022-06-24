@@ -6,23 +6,25 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
 import androidx.fragment.app.Fragment;
+import android.view.Menu;
+import android.app.Activity;
 
 public class MainActivity extends AppCompatActivity {
-	
 	BottomNavigationView bottomNav;
 	HomeFragment home = new HomeFragment();
-    
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		
+
 		Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
 		
+	    
 		bottomNav = findViewById(R.id.bottomNav);
 		bottomNav.setSelectedItemId(R.id.nav_home);
-		getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, home).commit();
+		getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,new HomeFragment()).commit();
 		bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
 			
 			@Override
@@ -53,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
 		});
         
     }
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.notifications_bar, menu);
+		return true;
+	}
     
 }
 /*don't forget to subscribe my YouTube channel for more Tutorial and mod*/

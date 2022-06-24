@@ -18,7 +18,9 @@
         android:resizeableActivity="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.project.application.SplashJava" >
+        <activity
+            android:name="com.project.application.SplashJava"
+            android:theme="@style/SplashScreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

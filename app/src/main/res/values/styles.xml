@@ -8,6 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 	
+	
+	<style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Waktu Bersamaan Ketika Benar Benar Dimuat -->
+		<item name="android:windowBackground">@color/colorPrimary</item>
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">@color/colorPrimary</item>
+		<item name="android:navigationBarColor">@color/colorPrimary</item>
+	</style>
+	
 	<style name="BottomNavTheme">
 		<item name="android:textSize">11dp</item>
 		<item name="android:state_checked">true</item>

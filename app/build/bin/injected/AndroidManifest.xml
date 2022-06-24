@@ -20,7 +20,8 @@
 		android:resizeableActivity="true">
 
 		<activity
-			android:name=".SplashJava">
+			android:name=".SplashJava"
+			android:theme="@style/SplashScreenTheme">
 
 			<intent-filter>
 
